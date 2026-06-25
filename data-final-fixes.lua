@@ -14,6 +14,8 @@ require "compat.castra"
 require "compat.krastorio-2-final-fixes"
 require "compat.water-refining"
 
+require "prototypes.planet.platform-backdrop"
+
 if not data.raw["mining-drill"]["electric-mining-drill"].next_upgrade then
     if mods["SchallAlienTech"] and data.raw["mining-drill"]["Schall-uranium-mining-drill"] then
         data.raw["mining-drill"]["electric-mining-drill"].next_upgrade = "Schall-uranium-mining-drill"
